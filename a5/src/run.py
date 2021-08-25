@@ -35,7 +35,7 @@ args = argp.parse_args()
 
 # Save the device
 device = torch.cuda.current_device() if torch.cuda.is_available() else 'cpu'
-#lol
+
 # Keep the block size 128
 # Why is the pretraining corpus always required (even if we're not pretraining?)
 # It's because we're using it as a hack to always have the same vocabulary
