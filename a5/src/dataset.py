@@ -124,7 +124,7 @@ class CharCorruptionDataset(Dataset):
     sequence, and y encodes the output sequence.
     '''
     def __getitem__(self, idx):
-        # TODO [part e]: see spec above
+        # [part e]: see spec above
         # 0. Use the idx argument of __getitem__ to retrieve the element of self.data
         # at the given index. We'll call the resulting data entry a document.
         doc = self.data[idx]
