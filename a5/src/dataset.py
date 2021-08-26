@@ -136,6 +136,7 @@ class CharCorruptionDataset(Dataset):
         # make sure that the length is picked _randomly_ (every possible length from 4
         # to int(self.block_size*7/8) has a chance of being picked) for full credit.
         trunc_len = random.randint(4, int(self.block_size*7/8))
+        doc = doc[:trunc_len]
 
         # 2. Now, break the (truncated) document into three substrings:
             
