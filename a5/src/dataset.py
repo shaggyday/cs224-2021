@@ -150,7 +150,7 @@ class CharCorruptionDataset(Dataset):
         # make sure that the length is picked _randomly_ (has a chance of being more or
         # less than 1/4 the length of the truncated document) for full credit.
 
-        mask_len = random.randint(1, trunc_len/2) #???
+        mask_len = random.randint(1, trunc_len//2) #???
 
         mask_start = random.randint(1, trunc_len-mask_len-1)
         mask_end = mask_start + mask_len
